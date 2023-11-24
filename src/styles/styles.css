@@ -94,7 +94,6 @@ body .container .content-title {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
-  min-width: 500px;
   padding: 2rem;
   margin: 50px;
   text-align: center;
@@ -103,7 +102,7 @@ body .container .content-title {
   box-shadow: 0px 10px 10px 0px #000000;
 }
 body .container .content-title img {
-  width: 400px;
+  max-width: 100%;
   height: auto;
   align-self: center;
 }

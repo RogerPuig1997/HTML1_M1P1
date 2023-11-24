@@ -13,7 +13,7 @@ nav {
   margin: 0;
   font-size: 12px;
   line-height: 20px;
-  color: #FF00FF;
+  color: #da9100;
   background-color: #1e1e1e;
   border-bottom: #0c0c0c solid 0.5px;
   font-family: "TabacGlam", sans-serif;
@@ -77,7 +77,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background: url(../assets/images/dangerous-convictions_bg.jpg) no-repeat center top;
+  background: url(../assets/images/dangerous-convictions_bg.jpg) no-repeat center top fixed;
   background-color: #1e1e1e;
   font-family: "TabacGlam", sans-serif;
 }
@@ -94,10 +94,11 @@ body .container .content-title {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
+  min-width: 500px;
   padding: 2rem;
   margin: 50px;
   text-align: center;
-  background-color: rgba(80, 80, 80, 0.7);
+  background-color: rgba(80, 80, 80, 0.8);
   border-radius: 1rem;
   box-shadow: 0px 10px 10px 0px #000000;
 }
@@ -107,7 +108,7 @@ body .container .content-title img {
   align-self: center;
 }
 body .container .content-title h1 {
-  font-size: 36px;
+  font-size: 42px;
   color: #da9100;
 }
 body .container .content-title p {
@@ -121,7 +122,7 @@ body .container .content-box {
   padding: 2rem;
   margin: 50px;
   text-align: center;
-  background-color: rgba(80, 80, 80, 0.7);
+  background-color: rgba(80, 80, 80, 0.8);
   border-radius: 1rem;
   box-shadow: 0px 10px 10px 0px #000000;
 }
@@ -129,6 +130,7 @@ body .container .content-box img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 1rem;
 }
 body .container .content-box h1 {
   font-size: 24px;
@@ -137,4 +139,108 @@ body .container .content-box h1 {
 body .container .content-box:hover {
   background-color: #646464;
   box-shadow: 0px 20px 10px 0px #000000;
+}
+body .container .content-category {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 50px;
+  margin-left: -100px;
+  padding: 2rem;
+  background-color: rgba(80, 80, 80, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0px 10px 10px 0px #000000;
+}
+body .container .content-category h1 {
+  font-size: 36px;
+  color: #da9100;
+}
+body .container .content-category p {
+  font-size: 18px;
+}
+body .container .content-category a {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: flex-end;
+  border-radius: 100%;
+}
+body .container .content-category a img {
+  width: 40px;
+  height: auto;
+  transform: rotate(90deg);
+}
+body .container .content-category blockquote {
+  font-style: italic;
+  font-size: 24px;
+}
+body .container .content-category .arcane-critica1 {
+  margin: 10px;
+  width: 500px;
+  height: auto;
+  border-radius: 1rem;
+}
+body .container .content-category .arcane-critica2 {
+  margin: 10px;
+  width: 400px;
+  height: auto;
+  border-radius: 1rem;
+}
+body .container .content-category .name-list {
+  font-size: 20px;
+}
+body .container .content-category .award-list {
+  font-size: 24px;
+}
+body .container .content-category .award-list .category-list {
+  font-size: 18px;
+}
+body .container .content-category button {
+  align-self: flex-end;
+  max-width: 200px;
+  font-family: "TabacGlam", sans-serif;
+  font-size: 20px;
+}
+body .container .content-links {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-width: 600px;
+  margin: 50px;
+  margin-left: -100px;
+  padding: 2rem;
+  background-color: rgba(80, 80, 80, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0px 10px 10px 0px #000000;
+}
+body .container .content-links a {
+  position: relative;
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #da9100;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ce9d3b;
+}
+
+@media (max-width: 1300px) {
+  body .container {
+    flex-direction: column;
+  }
+  body .container .content-category {
+    margin-left: 50px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background: url(../assets/images/dangerous-convictions_bg.jpg) no-repeat center top;
+    background: url(../assets/images/dangerous-convictions_bg.jpg) no-repeat center top fixed;
     background-color: #1e1e1e;
     font-family: 'TabacGlam', sans-serif;
     h1{
@@ -26,10 +26,11 @@ body{
             display: flex;
             flex-direction: column;
             max-width: 1200px;
+            min-width: 500px;
             padding: 2rem;
             margin: 50px;
             text-align: center;
-            background-color: rgba($color: #505050, $alpha: 0.7);
+            background-color: rgba($color: #505050, $alpha: 0.8);
             border-radius: 1rem;
             box-shadow: 0px 10px 10px 0px #000000;
             img{
@@ -38,7 +39,7 @@ body{
                 align-self: center;
             }
             h1{
-                font-size: 36px;
+                font-size: 42px;
                 color: #da9100;
                 }
             p{
@@ -53,13 +54,14 @@ body{
             padding: 2rem;
             margin: 50px;
             text-align: center;
-            background-color: rgba($color: #505050, $alpha: 0.7);
+            background-color: rgba($color: #505050, $alpha: 0.8);
             border-radius: 1rem;
             box-shadow: 0px 10px 10px 0px #000000;
             img{
                 max-width: 100%;
                 height: auto;
                 display: block;
+                border-radius: 1rem;
             }
             h1{
             font-size: 24px;
@@ -69,6 +71,107 @@ body{
         .content-box:hover{
             background-color: rgba($color: #646464, $alpha: 1);
             box-shadow: 0px 20px 10px 0px #000000;
+        }
+        .content-category{
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 50px;
+            margin-left: -100px;
+            padding: 2rem;
+            background-color: rgba($color: #505050, $alpha: 0.8);
+            border-radius: 1rem;
+            box-shadow: 0px 10px 10px 0px #000000;
+            h1{
+                font-size: 36px;
+                color: #da9100;
+                }
+            p{
+                font-size: 18px;
+            }
+            a{
+                position: relative;
+                width: fit-content;
+                align-self: flex-end;
+                border-radius: 100%;
+                img{
+                    width: 40px;
+                    height: auto;
+                    transform: rotate(90deg);
+                }
+            }
+            blockquote{
+                font-style: italic;
+                font-size: 24px;
+            }
+            .arcane-critica1{
+                margin: 10px;
+                width: 500px;
+                height: auto;
+                border-radius: 1rem;
+            }
+            .arcane-critica2{
+                margin: 10px;
+                width: 400px;
+                height: auto;
+                border-radius: 1rem;
+            }
+            .name-list{
+                font-size: 20px;
+            }
+            .award-list{
+                font-size: 24px;
+                .category-list{
+                    font-size: 18px;
+                }
+            }
+            button{
+                align-self: flex-end;
+                max-width: 200px;
+                font-family: 'TabacGlam', sans-serif;
+                font-size: 20px;
+            }
+        }
+        .content-links{
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            min-width: 600px;
+            margin: 50px;
+            margin-left: -100px;
+            padding: 2rem;
+            background-color: rgba($color: #505050, $alpha: 0.8);
+            border-radius: 1rem;
+            box-shadow: 0px 10px 10px 0px #000000;
+            a{
+                position: relative;
+                color: #000000;
+                font-size: 20px;
+                font-style: normal;
+            }
+        }
+    }
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb{
+    background: #da9100;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ce9d3b;
+}
+
+@media (max-width:1300px) {
+    body{
+        .container{
+            flex-direction: column;
+            .content-category{
+                margin-left: 50px;
+            }
         }
     }
 }

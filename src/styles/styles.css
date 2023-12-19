@@ -71,8 +71,34 @@ nav .dropdown-content a:hover {
   font-family: "TabacGlam";
   src: url("../assets/fonts/TabacGlamG4-Regular.woff2") format("woff2"), url("../assets/fonts/TabacGlamG4-Regular.woff") format("woff");
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  width: 100%;
+  min-height: 40px;
+  background-color: #505050;
+  justify-content: space-evenly;
+  bottom: 0%;
+  font-family: "TabacGlam", sans-serif;
+  font-size: 24;
+}
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  footer {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "TabacGlam";
+  src: url("../assets/fonts/TabacGlamG4-Regular.woff2") format("woff2"), url("../assets/fonts/TabacGlamG4-Regular.woff") format("woff");
+}
 body {
   height: 100vh;
+  max-height: 2771px;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -101,7 +127,7 @@ body .container .content-title {
   border-radius: 1rem;
   box-shadow: 0px 10px 10px 0px #000000;
 }
-body .container .content-title img {
+body .container .content-title .img-title {
   max-width: 100%;
   height: auto;
   align-self: center;
@@ -113,11 +139,43 @@ body .container .content-title h1 {
 body .container .content-title p {
   font-size: 18px;
 }
+body .container .content-title .img-poster {
+  width: 30%;
+  max-width: 500px;
+  align-self: center;
+  -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  transition: 0.4s cubic-bezier(1, -1, 0, 2);
+}
+@media (max-width: 720px) {
+  body .container .content-title .img-poster {
+    width: 60%;
+  }
+}
+body .container .content-title .img-poster:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+body .container .content-title .img-main {
+  height: auto;
+  width: 60%;
+  align-self: center;
+  border-radius: 1rem;
+}
+@media (max-width: 1080px) {
+  body .container .content-title .img-main {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  body .container .content-title .img-main {
+    width: 100%;
+  }
+}
 body .container .content-box {
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  min-width: 250px;
   padding: 2rem;
   margin: 50px;
   text-align: center;
@@ -142,7 +200,7 @@ body .container .content-box:hover {
 body .container .content-category {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 50px;
   margin-left: -100px;
   padding: 2rem;
@@ -175,15 +233,33 @@ body .container .content-category blockquote {
 }
 body .container .content-category .arcane-critica1 {
   margin: 10px;
-  width: 500px;
+  width: 80%;
+  max-width: 500px;
   height: auto;
   border-radius: 1rem;
 }
 body .container .content-category .arcane-critica2 {
   margin: 10px;
-  width: 400px;
+  width: 60%;
+  max-width: 400px;
   height: auto;
   border-radius: 1rem;
+}
+body .container .content-category .video-responsive {
+  float: none;
+  clear: both;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  position: relative;
+}
+body .container .content-category .video-responsive iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 body .container .content-category .name-list {
   font-size: 20px;
@@ -193,6 +269,21 @@ body .container .content-category .award-list {
 }
 body .container .content-category .award-list .category-list {
   font-size: 18px;
+}
+body .container .content-category picture {
+  display: flex;
+  justify-content: center;
+}
+body .container .content-category picture .img-emmy {
+  height: auto;
+  width: 40%;
+  border-radius: 1rem;
+}
+@media (max-width: 1080px) {
+  body .container .content-category picture .img-emmy {
+    width: 30%;
+    height: auto;
+  }
 }
 body .container .content-category button {
   align-self: flex-end;
@@ -239,7 +330,20 @@ body .container .content-links a {
   body .container {
     flex-direction: column;
   }
-  body .container .content-category {
+  body .content-category {
     margin-left: 50px;
+  }
+  body .content-category .arcane-critica1 {
+    width: 100%;
+    margin: 1px;
+    margin-bottom: 4px;
+  }
+  body .content-category .arcane-critica2 {
+    width: 80%;
+    margin: 1px;
+  }
+  body .content-links {
+    min-width: 300px;
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=styles.css.map */

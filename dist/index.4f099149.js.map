@@ -1,1 +1,0 @@
-{"mappings":"","sources":["src/scripts/script.js"],"sourcesContent":["function redirectToCategory() {\r\n    window.location.href = 'category.html'\r\n}"],"names":[],"version":3,"file":"index.4f099149.js.map"}

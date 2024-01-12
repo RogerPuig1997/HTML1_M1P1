@@ -4,6 +4,7 @@
   font-family: "TabacGlam";
   src: url("../assets/fonts/TabacGlamG4-Regular.woff2") format("woff2"),
     url("../assets/fonts/TabacGlamG4-Regular.woff") format("woff");
+  font-display: swap;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background: url(../assets/images/dangerous-convictions_bg.jpg) no-repeat
+  background: url(../assets/images/dangerous-convictions_bg.webp) no-repeat
     center top fixed;
   background-color: #1e1e1e;
   font-family: "TabacGlam", sans-serif;

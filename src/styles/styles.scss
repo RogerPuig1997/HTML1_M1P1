@@ -26,6 +26,9 @@ body {
     flex-direction: row;
     padding: 0;
     margin: auto;
+    @media (nax-width: 1300px){
+      flex-direction: column;
+    }
     .content-title {
       display: flex;
       flex-direction: column;
@@ -110,6 +113,9 @@ body {
       background-color: rgba($color: #505050, $alpha: 0.8);
       border-radius: 1rem;
       box-shadow: 0px 10px 10px 0px #000000;
+      @media (max-width: 1300px) {
+        margin: 50px;
+      }
       h1 {
         font-size: 36px;
         color: #da9100;
@@ -138,6 +144,11 @@ body {
         max-width: 500px;
         height: auto;
         border-radius: 1rem;
+        @media (max-width: 1300px){
+          width: 100%;
+          margin: 1px;
+          margin-bottom: 4px;
+        }
       }
       .arcane-critica2 {
         margin: 10px;
@@ -145,6 +156,10 @@ body {
         max-width: 400px;
         height: auto;
         border-radius: 1rem;
+        @media (max-width: 1300px){
+          width: 80%;
+          margin: 1px;
+        }
       }
       .video-responsive {
         float: none;
@@ -265,6 +280,10 @@ body {
       background-color: rgba($color: #505050, $alpha: 0.8);
       border-radius: 1rem;
       box-shadow: 0px 10px 10px 0px #000000;
+      @media (max-width: 1300px){
+        min-width: 300px;
+        margin-left: 0px;
+      }
       a {
         position: relative;
         color: #000000;
@@ -285,28 +304,4 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #ce9d3b;
-}
-
-@media (max-width: 1300px) {
-  body {
-    .container {
-      flex-direction: column;
-    }
-    .content-category {
-      margin: 50px;
-      .arcane-critica1 {
-        width: 100%;
-        margin: 1px;
-        margin-bottom: 4px;
-      }
-      .arcane-critica2 {
-        width: 80%;
-        margin: 1px;
-      }
-    }
-    .content-links {
-      min-width: 300px;
-      margin-left: 0px;
-    }
-  }
 }

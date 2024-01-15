@@ -270,7 +270,7 @@ body .container .content-category .arcane-critica2 {
     margin: 1px;
   }
 }
-body .container .content-category .video-responsive {
+body .container .content-category #video-container-1 {
   float: none;
   clear: both;
   width: 100%;
@@ -279,7 +279,23 @@ body .container .content-category .video-responsive {
   padding-top: 25px;
   position: relative;
 }
-body .container .content-category .video-responsive iframe {
+body .container .content-category #video-container-1 iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body .container .content-category #video-container-2 {
+  float: none;
+  clear: both;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  position: relative;
+}
+body .container .content-category #video-container-2 iframe {
   height: 100%;
   left: 0;
   position: absolute;

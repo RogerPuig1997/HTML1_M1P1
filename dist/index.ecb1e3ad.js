@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){e("phiOLJpFgns?si=tmKjlpZTT4omnOyM?rel=0","video-container-1"),e("0qSarZpylxs?si=Z8aEMbmXHAkopuef?rel=0","video-container-2")});function e(e,t){var n=document.createElement("iframe");n.src="https://www.youtube.com/embed/"+e,n.setAttribute("allowfullscreen",""),n.setAttribute("frameborder","0"),n.setAttribute("loading","lazy");var o=document.getElementById(t);o?o.appendChild(n):console.error("Container with ID "+t+" not found.")}
+//# sourceMappingURL=index.ecb1e3ad.js.map

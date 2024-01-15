@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-    createYouTubeVideo('phiOLJpFgns?si=tmKjlpZTT4omnOyM?rel=0', 'video-container-1');
-    createYouTubeVideo('0qSarZpylxs?si=Z8aEMbmXHAkopuef?rel=0', 'video-container-2');
+    if (document.getElementById('video-container-1')) {
+        createYouTubeIframe('phiOLJpFgns?si=tmKjlpZTT4omnOyM?rel=0', 'video-container-1');
+    }
+
+    if (document.getElementById('video-container-2')) {
+        createYouTubeIframe('0qSarZpylxs?si=Z8aEMbmXHAkopuef?rel=0', 'video-container-2');
+    }
 });
-function createYouTubeVideo(videoId, containerId) {
+function createYouTubeIframe(videoId, containerId) {
     var iframe = document.createElement('iframe');
     iframe.src = 'https://www.youtube.com/embed/' + videoId;
     iframe.setAttribute('allowfullscreen', '');

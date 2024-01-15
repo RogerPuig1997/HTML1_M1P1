@@ -26,7 +26,7 @@ body {
     flex-direction: row;
     padding: 0;
     margin: auto;
-    @media (nax-width: 1300px){
+    @media (max-width: 1300px){
       flex-direction: column;
     }
     .content-title {
